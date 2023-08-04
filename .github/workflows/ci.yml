@@ -17,11 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Oracle JDK
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'oracle'
-        java-version: '17'
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
     
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
